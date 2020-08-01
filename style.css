@@ -1,0 +1,356 @@
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Open Sans', sans-serif; */
+
+
+:root{
+    --color-text-general: rgb(39, 38, 38);
+    --color-name: rgb(95, 155, 184);
+    --color-circle-border: #FFF;
+    --color-section-bullet: rgb(68, 114, 196);
+    --color-profile-link : rgb(140, 200, 229);
+    --color-project-link : rgb(45, 105, 134);
+    --color-primary-lite: rgb(235, 232, 232);
+    --color-primay-black: rgb(39, 38, 38);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.56rem;
+}
+
+h3 {
+    font-size: 0.9375rem;
+}
+
+h4 {
+    font-size: 0.895rem;
+}
+
+p {
+    font-size: 0.8125rem;
+}
+
+.container {
+    height: 100vh;
+    width: 21cm;
+    margin: 0px auto;
+    background-color: rgb(86, 88, 79);
+}
+
+.left {
+    height: 100vh;
+    width: 7.68cm;
+    background-color: var(--color-primay-black);
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 0.8125rem;
+    line-height: 1.3rem;
+    text-align: left;
+}
+
+
+.left {
+    color: var(--color-primary-lite);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dp img {
+    display: block;
+    height: 150px;
+    width: 150px;
+    border: 1px solid var(--color-primary-lite);
+    border-radius: 50%;
+    margin: 0px auto;
+    
+}
+
+.dp {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.about-me {
+    height: auto;
+    width: auto;
+    margin: 2rem 0;
+}
+
+.about-me p{
+    font-size: 15px;
+}
+
+.section-header{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    display: flex;
+}
+
+.section-header img{
+    border-radius: 50%;
+    border: 1px solid var(--color-circle-border);
+    margin-right: 0.5rem;
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-primary-lite);
+    position: relative;
+    bottom: 2.5px;
+}
+
+.section-name{
+    white-space: nowrap; 
+    text-transform: uppercase;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    margin-left: 0.1875rem;
+    margin-top: 0.6rem;
+}
+
+.left .line {
+    background-color: var(--color-primary-lite);
+}
+
+.left .description {
+    font-style: inherit;
+    font-weight: normal;
+    box-sizing: border-box;
+    padding: 1rem 1rem 1rem 2rem;
+    height: auto;
+    width: 100%;
+}
+
+.left::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.left::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.left::-webkit-scrollbar-thumb {
+  background-color: rgb(140, 200, 229);
+  outline: 1px solid slategrey;
+}
+
+.contact-info-sub {
+    padding-bottom: 1rem;
+}
+
+.contact-info-sub-header {
+    font-weight: bold !important;
+}
+
+.description ul {
+    padding-left: 1.5rem;
+}
+
+.description li {
+    list-style: none;
+    position: relative;
+}
+
+.description li img {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 13px;
+    width: auto;
+    margin-right: 4px;
+    position: relative;
+    top: 3.5px;
+}
+
+.profile-link {
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    transform-origin: left;
+    transition: all 250ms ease-out 200ms;
+}
+
+.profile-link:hover {
+    transform: scale(1.1);
+}
+
+.profile-link img{
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin-right: 0.3rem;
+    border: 1px solid var(--color-profile-link);
+    border-radius: 50%;
+    background-color: var(--color-profile-link);
+}
+
+.profile-link a {
+    display: flex;
+    text-decoration: none;
+    color: var(--color-profile-link);
+    font-weight: bold;
+}
+
+
+.right {
+    font-family: 'Bebas Neue', cursive;
+    min-height: 100vh;
+    width: 13.32cm;
+    background-color: var(--color-primary-lite);
+    margin-left: 7.68cm;
+}
+
+
+.right header{
+    padding: 3rem 0rem 0rem 2.5rem;
+    left: 2.2rem;
+    top: 3rem;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+
+.right h1 {
+    color: var(--color-name);
+    font-weight: bold;
+}
+
+
+.right .line{
+    background-color: var(--color-primay-black);
+}
+
+main {
+    padding: 1rem 1rem 2.5rem 2rem;
+   font-family: 'Open Sans', sans-serif;
+   line-height: 1.3;;
+}
+
+main .section-header img{
+    border-radius: 0%;
+    border: 0px;
+    margin-bottom: 1rem;
+    /* box-sizing: border-box; */
+    /* margin-bottom: 0.3rem; */
+
+}
+
+.section-name{
+    font-weight: 700;
+}
+
+main .sub-section{
+    margin: auto;
+    width: 100%;
+    display: flex;
+}
+
+main .title{
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 0.3rem;
+    padding-left: 1rem;
+    /* padding-top: 1rem; */
+    min-width: 6rem;
+    background-color: rgb(95, 155, 184);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+main .title span{
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+main .date{
+    width: 4rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+main .divider{
+    height: auto;
+    width: 2px;
+    background-color: var(--color-primay-black);
+}
+
+main .divider::after{
+    content: '';
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: relative;
+    top: 1rem;
+    right: 0.4rem;
+    background-color: var(--color-name);
+}
+
+main .sub-sec-description{
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+main ul {
+    padding-top: 0.5rem;
+    padding-left: 3rem;
+    list-style-type: disc;
+    padding-bottom: 1.5rem;
+}
+
+main li {
+    margin-top: 0.5rem;
+}
+
+.info-sec {
+    margin-top: 3rem;
+}
+
+main a{
+    text-decoration: none;
+    color: var(--color-project-link);
+    font-weight: 600;
+    transition: all 250ms ease-out;
+    display: inline-block;
+}
+
+main a:hover{
+    font-weight: 700;
+}
+
+#projects .title{
+    padding: 1rem
+}
+
+.ssl .divider::after{
+    top: 1.7rem;
+}
+
+#awards img ,#projects img{
+    position: relative;
+    top: 1px;
+}
+
+#awards .divider::after{
+    position: relative;
+    top: 15px;
+}
+
+#awards .title, #languages .title{
+    background-color: inherit;
+    padding: 0.7rem;
+}
+
+#skills .divider::after {
+    top: 8px;
+}
+
+#languages .title{
+    padding-bottom: 0px;
+}
+
+#languages ul{
+    padding-bottom: 0px;
+}
